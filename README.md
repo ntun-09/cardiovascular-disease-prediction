@@ -1,20 +1,31 @@
 # Cardiovascular Disease Prediction
 
-This project builds a machine learning pipeline to predict cardiovascular disease risk.
+Machine learning project for predicting cardiovascular disease risk using ensemble models.
 
-## Overview
-- Binary classification problem
-- Goal: Predict presence of cardiovascular disease
-- Evaluation: ROC-AUC, Brier Score, Calibration
+## Problem
+Cardiovascular disease is a leading cause of death worldwide.  
+This project aims to build a predictive model to identify high-risk patients based on clinical features.
 
-## Methods
-- Feature engineering
-- Winsorization & preprocessing
+## Approach
+- Data preprocessing & winsorization
+- Feature engineering & interaction terms
 - Multicollinearity analysis (VIF)
-- Models: Logistic Regression, Random Forest, XGBoost
-- Ensemble: Weighted soft voting
+- Model training:
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+- Ensemble learning (weighted soft voting)
+
+## Evaluation
+- ROC-AUC (primary metric)
+- Brier Score (probability calibration)
+- Calibration curve
 - Threshold optimization (Youden’s J)
-- Risk stratification analysis
+
+## Results
+- Improved performance using ensemble methods
+- Well-calibrated probability predictions
+- Effective risk stratification based on clinical factors
 
 ## Tech Stack
 - Python
